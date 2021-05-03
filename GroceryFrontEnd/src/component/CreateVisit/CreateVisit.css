@@ -1,0 +1,12 @@
+.container {
+    width: 30%;
+    padding-top: 10vh;
+}
+
+.block {
+    margin-bottom: 10px;
+}
+
+.block-button {
+    margin-top: 20px;
+}

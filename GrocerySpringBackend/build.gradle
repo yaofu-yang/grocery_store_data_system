@@ -1,0 +1,30 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.0.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '1.4.0.RELEASE'
+	compile "org.springframework.boot:spring-boot-configuration-processor"
+	compile group: 'org.json', name: 'json', version: '20090211'
+	compile group: 'org.springframework.data', name: 'spring-data-mongodb', version: '3.0.1.RELEASE'
+	compile group: 'org.mongodb', name: 'bson', version: '3.11.2'
+	compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.0.1.RELEASE'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}

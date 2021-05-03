@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Visit</title>
+</head>
+<body>
+
+<h1>Add A New Visit</h1>
+
+<form>
+
+  <div>
+    <label for="visitDate">Visit Date:</label>
+    <input type="date" id="visitDate"
+           name="visitDate" value="2020-07-04" required>
+  </div>
+
+  <div>
+    <label for="entryTime">Entry Time:</label>
+    <input type="time" id="entryTime" name="entryTime"
+           min="06:00" max="21:00" value="06:00" required>
+
+    <label for="leaveTime">Leave Time:</label>
+    <input type="time" id="leaveTime" name="leaveTime"
+           min="06:00" max="21:00" value="06:00" required>
+  </div>
+
+  <div>
+    <span>Day of Week:</span>
+    <label for="weekday">Weekday</label>
+    <input id="weekday" type="radio" name="DayOfWeek" value="weekday">
+    <label for="weekend">Weekend</label>
+    <input id="weekend" type="radio" name="DayOfWeek" value="weekend">
+  </div>
+  <div>
+    <span>Weather of a Day:</span>
+    <label for="nice">Nice weather</label>
+    <input id="nice" type="radio" name="weather" value="nice">
+    <label for="normal">Normal weather</label>
+    <input id="normal" type="radio" name="weather" value="normal">
+    <label for="bad">Bad weather</label>
+    <input id="bad" type="radio" name="weather" value="bad">
+  </div>
+  <div>
+    <span>Holiday Type:</span>
+    <label for="holiday">Holiday</label>
+    <input id="holiday" type="radio" name="holidayType" value="holiday">
+    <label for="dayBeforeHoliday">Day before holiday</label>
+    <input id="dayBeforeHoliday" type="radio" name="holidayType" value="dayBeforeHoliday">
+    <label for="weekBeforeHoliday">Week before holiday</label>
+    <input id="weekBeforeHoliday" type="radio" name="holidayType" value="weekBeforeHoliday">
+    <label for="notHoliday">Holiday</label>
+    <input id="notHoliday" type="radio" name="holidayType" value="notHoliday">
+  </div>
+  <div>
+    <span>Special Reason for Visit:</span>
+    <label for="lunch">Lunch</label>
+    <input id="lunch" type="radio" name="event" value="lunch">
+    <label for="dinner">Dinner</label>
+    <input id="dinner" type="radio" name="event" value="dinner">
+    <label for="seniorDiscount">Senior Discount</label>
+    <input id="seniorDiscount" type="radio" name="event" value="seniorDiscount">
+    <label for="none">None</label>
+    <input id="none" type="radio" name="event" value="none">
+  </div>
+
+  <div>
+    <!-- 	<button>Submit</button> -->
+    <input type="Submit" value="Sbumit">
+  </div>
+
+
+</form>
+
+
+</body>
+</html>
+
+</html>
